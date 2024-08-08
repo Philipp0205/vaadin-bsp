@@ -1,0 +1,56 @@
+.category-card {
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.category-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.flawless-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: lightgrey;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 50%;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.correct-answer {
+    background-color: green !important;
+    color: white !important;
+    transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.wrong-answer {
+    background-color: red !important;
+    color: white !important;
+    transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.correct-tab {
+	color: green !important;
+}
+
+.wrong-tab {
+	color: red !important;
+}
+
+@keyframes blink {
+    50% {
+        background-color: lime;
+    }
+}
+
+.correct-answer {
+    animation: blink 1s ease-out;
+}
+
+.header {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+

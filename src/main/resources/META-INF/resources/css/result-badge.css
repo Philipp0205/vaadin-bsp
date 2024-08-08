@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+.result-badge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    padding: 12px;
+    text-align: center;
+    width: 120px;
+    margin: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+    color: white;
+}
+
+.result-badge:hover {
+    transform: translateY(-5px);
+}
+
+.result-icon {
+    margin-bottom: 6px;
+    color: white;
+    width: 30px;
+    height: 30px;
+}
+
+.result-value {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    margin: 2px 0;
+}
+
+.result-title {
+    font-size: 14px;
+    color: white;
+}
+
+/* Specific color styles with gradients */
+.yellow-badge {
+    background: linear-gradient(145deg, #FFD740, #FFC400);
+}
+
+.blue-badge {
+    background: linear-gradient(145deg, #29B6F6, #039BE5);
+}
+
+.green-badge {
+    background: linear-gradient(145deg, #66BB6A, #43A047);
+}
